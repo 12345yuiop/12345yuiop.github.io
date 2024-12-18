@@ -1,0 +1,264 @@
+
+ 
+
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Tipografía principal */
+    line-height: 1.6;
+    background-color: #f0f9f4; /* Color de fondo suave */
+    color: #333;
+}
+
+/* Estilos de Header */
+header {
+    background: linear-gradient(135deg, #4CAF50, #8BC34A); /* Fondo degradado verde */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header .logo img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #FFEB3B; /* Color de hover amarillo */
+}
+
+/* Sección: ¿Quiénes somos? */
+#quienes-somos {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#quienes-somos h1 {
+    font-size: 36px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+#quienes-somos p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Sección: Nuestros Servicios */
+#nuestros-servicios {
+    padding: 40px 20px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+#nuestros-servicios h2 {
+    font-size: 32px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.servicios {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.servicio {
+    width: 30%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.servicio:hover {
+    transform: translateY(-10px);
+}
+
+.servicio img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.servicio h3 {
+    font-size: 24px;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.servicio p {
+    font-size: 16px;
+    color: #777;
+    line-height: 1.6;
+}
+
+/* Sección: ¿con que cortamos tus pasto? */
+#¿con que cortamos tus pasto? {
+    padding: 40px 20px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+#¿con que cortamos tus pasto? h2 {
+    font-size: 32px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.maquinas {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.maquina { /* Cambiar de ".maquinas" a ".maquina" (igual que ".servicio") */
+    width: 0%; /* Igual que .servicio */
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.maquina:hover {
+    transform: translateY(-10px);
+}
+
+.maquina img { /* Asegúrate de usar esta clase para las imágenes */
+    width: 45%; /* Cambiado a 100% para que coincida con .servicio img */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.maquina h2 {
+    font-size: 24px;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.maquina p {
+    font-size: 16px;
+    color: #777;
+    line-height: 1.6;
+}
+
+#ubicacion p {
+    font-size: 18px;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+#ubicacion img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Sección: Contacto */
+#contacto {
+    padding: 40px 20px;
+    text-align: center;
+    background: #f9f9f9;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#contacto h2 {
+    font-size: 32px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+#contacto p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+#contacto ul {
+    list-style-type: none;
+}
+
+#contacto ul li {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+/* Estilos de Footer */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 16px;
+    color: #fff;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    .servicios {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servicio {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    header nav ul li {
+        margin: 0 10px;
+    }
+}
